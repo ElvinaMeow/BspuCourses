@@ -1,0 +1,385 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Тёмно-серый цвет для остального текста */
+    text-align: center;
+    background-color: #D9D9D9;
+}
+
+header {
+    background-color: #194783; 
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 40px;  
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px; 
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.login-button {
+    background-color: white;
+    color: #194783;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*баннер*/
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 180px 20px;
+    background: url(image/img1.png)center/cover no-repeat;; 
+    color: #fff;
+    min-height: 50vh;
+    position: relative; 
+    overflow: hidden;   
+}
+
+.banner-title {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-family: Helvetica;
+    
+}
+
+.banner-subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.banner-button {
+    padding: 15px 80px;
+    font-size: 20px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #D9D9D9;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Helvetica;
+}
+
+/*второй блок*/
+.world-class {
+    background-color: #333; 
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.world-class-title {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.world-class-description {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.world-class-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.phone-button {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+.signup-button {
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+/*курсы */
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto; 
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.course-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden; /* Обрезает изображение по краям радиуса */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+    transition: transform 0.2s ease-in-out; /* Анимация при наведении */
+}
+
+.course-card:hover {
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.course-image {
+    width: 100%;
+    height: 200px; /* Фиксированная высота изображения */
+    object-fit: cover; /* Масштабирует изображение, чтобы заполнить контейнер */
+}
+
+.course-category {
+    padding: 10px;
+    font-size: 0.8em;
+    color: #777;
+}
+
+.course-title {
+    padding: 0 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.course-duration {
+    padding: 0 10px 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.course-duration::before {
+    content: "\2022"; /* Жирная точка перед длительностью */
+    margin-right: 5px;
+}
+
+.all-courses-button {
+    background-color: #3f51b5; /* Цвет кнопки */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.all-courses-button:hover {
+    background-color: #303f9f; /* Более темный цвет при наведении */
+}
+
+
+
+/*вопросы*/
+.questions-page {
+    background: url("image/img1.png") center/cover no-repeat; 
+    padding: 50px 20px;
+    text-align: center;
+    min-height: 100vh; 
+    box-sizing: border-box; 
+}
+
+.questions-title {
+    font-size: 48px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.questions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    max-width: 900px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.question-item {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.question-number {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: #2962ff; 
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.question-item p {
+    margin: 5px 0;
+}
+
+
+  /*Цены*/
+.prices {
+    background-color: #333; 
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.prices-title {
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.prices-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.price-card {
+    width: 300px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.price-card-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.price-card-price {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.price-card-description {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.prices-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+  /*футер*/
+footer {
+    background-color: #0E559A; 
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    width: 250px; 
+    margin-bottom: 20px;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column p {
+    margin-bottom: 5px;
+}
+
+.footer-column form {
+    display: flex;
+    align-items: center;
+}
+
+.footer-column input[type="email"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 150px;
+    font-size: 14px;
+}
+
+.footer-column button[type="submit"] {
+    padding: 8px 12px;
+    background-color: #fff;
+    color: #0E559A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/*Адаптивность*/
+@media (max-width: 768px) {
+    .course {
+        width: 90%;
+        min-width: auto;
+    }
+}
+
